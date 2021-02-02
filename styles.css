@@ -11,7 +11,7 @@ body {
 
     z-index: 2;
 
-    background-color:rgba(117, 176, 199, 0.5);
+    /* background-color:rgba(117, 176, 199, 0.5); */
 }
 
 .firstView {
@@ -42,10 +42,10 @@ body {
 }
 
 /* About Drop Down Container */
-.aboutButton {
+/* About Drop Down Container */
+.aboutDropDown {
     float: right;
-    overflow:visible;
-    cursor:pointer;
+    overflow: hidden;
 }
 
 /* Dropdown Button */
@@ -61,21 +61,10 @@ body {
     font-weight: bold;
 }
 
-.about-content {
-    display: none;
-    position: absolute;
-    
-    background-color: white;
-    min-width: 200px;
-
-    border-radius: 3px;
-    z-index: 1;
-}
-
-/* Links in About Dropbox */
+/* Links in Help Dropbox */
 .about-content a {
+    float: none;
     color: rgb(126, 126, 126);
-    padding: 12px 16px;
     text-decoration: none;
     display: inline-block;
     text-align: left;
@@ -91,8 +80,21 @@ body {
     display: block;
 }
 
+.about-content {
+    display: none;
+    position: relative;
+    
 
-.aboutDropDown a:hover .aboutButton{
+    background-color: white;
+    width: 200px;
+    z-index: 1;
+    
+    padding: 0;
+
+    border-radius: 3px;
+}
+
+.aboutDropDown a:hover{
     background-color: white;
 }
 
@@ -137,7 +139,7 @@ body {
 
 .help-content {
     display: none;
-    position: absolute;
+    position: relative;
     
 
     background-color: white;
@@ -159,8 +161,6 @@ body {
 .communityDropDown {
     float: right;
     overflow: hidden;
-
-    
 }
 
 /* Dropdown Button */
@@ -197,7 +197,7 @@ body {
 
 .community-content {
     display: none;
-    position: absolute;
+    position: relative;
     
 
     background-color: white;
